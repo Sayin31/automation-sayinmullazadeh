@@ -60,7 +60,7 @@ describe('Tester Hotel', function(){
         cy.go('back')
         dashBoardFuncs.chooseBillsPage(cy, 'Bills')
         cy.go('back')
-        dashBoardFuncs.chooseReservationsPage(cy, 'Bills')
+        dashBoardFuncs.chooseReservationsPage(cy, 'Reservations')
         cy.go('back')
         dashBoardFuncs.performLogout(cy, 'Login')
     })

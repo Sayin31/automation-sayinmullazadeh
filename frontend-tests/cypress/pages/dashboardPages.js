@@ -5,7 +5,7 @@ const logoutButton = '.user > .btn'
 const roomPageButton = '#app > div > div > div:nth-child(1) > a'
 const clientsPageButton = '#app > div > div > div:nth-child(2) > a'
 const billsPageButton = '#app > div > div > div:nth-child(3) > a'
-const reservationsPageButton = '#app > div > div > div:nth-child(3) > a'
+const reservationsPageButton = '#app > div > div > div:nth-child(4) > a'
 
 // Actions / Functions
 function performLogout(cy, contentToConfirm){
