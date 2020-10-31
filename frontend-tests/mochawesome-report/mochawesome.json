@@ -1,0 +1,195 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-10-31T15:32:01.635Z",
+    "end": "2020-10-31T15:32:24.044Z",
+    "duration": 22409,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "df37fb4d-5bd5-49a9-a29b-5c86d78d00f2",
+      "title": "",
+      "fullFile": "cypress/integration/assigment01-testerHotel.spec.js",
+      "file": "cypress/integration/assigment01-testerHotel.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "51614f9f-cacf-47ff-9ee1-ed79f69a0146",
+          "title": "Tester Hotel",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Perform login and logout",
+              "fullTitle": "Tester Hotel Perform login and logout",
+              "timedOut": null,
+              "duration": 2649,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "indexFuncs.performValidLoginUserOne(cy, targets.username, targets.password, 'Tester Hotel Overview');\ndashBoardFuncs.performLogout(cy, 'Login');",
+              "err": {},
+              "uuid": "9dd47143-6066-41da-bfb7-e075e4d89abd",
+              "parentUUID": "51614f9f-cacf-47ff-9ee1-ed79f69a0146",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Perform an invalid login, a correct login and then logout",
+              "fullTitle": "Tester Hotel Perform an invalid login, a correct login and then logout",
+              "timedOut": null,
+              "duration": 4021,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "indexFuncs.performInvalidLogin(cy, targets.password);\nindexFuncs.performValidLoginUserOne(cy, targets.username, targets.password, 'Tester Hotel Overview');\ndashBoardFuncs.performLogout(cy, 'Login');",
+              "err": {},
+              "uuid": "a5f41ad3-f691-458f-abe3-09fa20f0118c",
+              "parentUUID": "51614f9f-cacf-47ff-9ee1-ed79f69a0146",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Perform login with many users",
+              "fullTitle": "Tester Hotel Perform login with many users",
+              "timedOut": null,
+              "duration": 3715,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "indexFuncs.performValidLoginUserOne(cy, targets.username, targets.password, 'Tester Hotel Overview');\ndashBoardFuncs.performLogout(cy, 'Login');\nindexFuncs.performValidLoginUserTwo(cy, targets.usernameTwo, targets.passwordTwo, 'Tester Hotel Overview');\ndashBoardFuncs.performLogout(cy, 'Login');",
+              "err": {},
+              "uuid": "ba83cbeb-e19a-41a5-b0a0-55ebbc4a6023",
+              "parentUUID": "51614f9f-cacf-47ff-9ee1-ed79f69a0146",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Change available room 101",
+              "fullTitle": "Tester Hotel Change available room 101",
+              "timedOut": null,
+              "duration": 2696,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "indexFuncs.performValidLoginUserOne(cy, targets.username, targets.password, 'Tester Hotel Overview');\ndashBoardFuncs.chooseRoomPage(cy, 'Rooms');\nroomFuncs.editRoom101(cy, 'ID');\nroomOneEdit.pushAvailableButton(cy);\nroomOneEdit.saveEdit(cy, 'Rooms');\nroomOneEdit.performLogout(cy, 'Login');",
+              "err": {},
+              "uuid": "0c96fce8-67ae-41a6-9ae4-91413677a273",
+              "parentUUID": "51614f9f-cacf-47ff-9ee1-ed79f69a0146",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create a new client",
+              "fullTitle": "Tester Hotel Create a new client",
+              "timedOut": null,
+              "duration": 3650,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "indexFuncs.performValidLoginUserOne(cy, targets.username, targets.password, 'Tester Hotel Overview');\ndashBoardFuncs.chooseClientsPage(cy, 'Clients');\nclientsFuncs.createClients(cy, 'New Client');\nclientsCreation.clientFormular(cy, 'Clients');\nclientsFuncs.performLogout(cy, 'Login');",
+              "err": {},
+              "uuid": "bc86ea44-f85a-405f-b29e-d0995dc1c8b7",
+              "parentUUID": "51614f9f-cacf-47ff-9ee1-ed79f69a0146",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Visit all pages",
+              "fullTitle": "Tester Hotel Visit all pages",
+              "timedOut": null,
+              "duration": 3215,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "indexFuncs.performValidLoginUserOne(cy, targets.username, targets.password, 'Tester Hotel Overview');\ndashBoardFuncs.chooseRoomPage(cy, 'Rooms');\ncy.go('back');\ndashBoardFuncs.chooseClientsPage(cy, 'Clients');\ncy.go('back');\ndashBoardFuncs.chooseBillsPage(cy, 'Bills');\ncy.go('back');\ndashBoardFuncs.chooseReservationsPage(cy, 'Bills');\ncy.go('back');\ndashBoardFuncs.performLogout(cy, 'Login');",
+              "err": {},
+              "uuid": "7b8ec8f0-e4b3-434e-8055-e0b93916e76e",
+              "parentUUID": "51614f9f-cacf-47ff-9ee1-ed79f69a0146",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9dd47143-6066-41da-bfb7-e075e4d89abd",
+            "a5f41ad3-f691-458f-abe3-09fa20f0118c",
+            "ba83cbeb-e19a-41a5-b0a0-55ebbc4a6023",
+            "0c96fce8-67ae-41a6-9ae4-91413677a273",
+            "bc86ea44-f85a-405f-b29e-d0995dc1c8b7",
+            "7b8ec8f0-e4b3-434e-8055-e0b93916e76e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 19946,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.1.0"
+    }
+  }
+}
